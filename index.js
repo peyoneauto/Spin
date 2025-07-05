@@ -11,10 +11,10 @@ const client = new Client({
 
 let inviteCounts = new Map(); 
 let invitedUsers = new Map(); 
-const logChannelId = ""; // حط ايدي روم اللوق
+const logChannelId = "1391054210136539256"; // حط ايدي روم اللوق
 
 client.once('ready', () => {
-    console.log('Developer By : 3nB.');
+    console.log('Yuti Spin');
 });
 
 async function fetchAndStoreUserInvites(guild) {
@@ -74,8 +74,8 @@ client.on('interactionCreate', async (interaction) => {
 
     if (interaction.customId === 'normal_spin') {
         spinType = 'العجلة العادية';
-        if (userInvites >= 1) {
-            const spinNormal = ["", "", "", "", "", "", "", ""]; // المكافات
+        if (userInvites >= 2) {
+            const spinNormal = ["Nitro Classic", "2.99$ Effect", "", "", "", "", "", ""]; // المكافات
             reward = spinNormal[Math.floor(Math.random() * spinNormal.length)];
             updateUserInvites(interaction.user.id, userInvites - 1);
             await interaction.reply({ content: `فزت معنا : ${reward}`, ephemeral: true });
@@ -84,8 +84,8 @@ client.on('interactionCreate', async (interaction) => {
         }
     } else if (interaction.customId === 'special_spin') {
         spinType = 'العجلة الخاصة';
-        if (userInvites >= 2) {
-            const spinSpecial = ["", "", "", "", "", "", "", ""]; // حقت البريم
+        if (userInvites >= 4) {
+            const spinSpecial = ["Nitro Gaming", "5$ Effect", "", "", "", "", "", ""]; // حقت البريم
             reward = spinSpecial[Math.floor(Math.random() * spinSpecial.length)];
             updateUserInvites(interaction.user.id, userInvites - 2);
             await interaction.reply({ content: `فزت معنا : ${reward}`, ephemeral: true });
@@ -152,4 +152,4 @@ client.on("messageCreate", async (message) => {
     }
 });
 
-client.login(""); // token your bot
+client.login("MTM5MTA1NTI1NTg4NTcxMzUxOQ.GbVCqG.jaBn5EtZhPhLzL3jrHy7io8LXku9CKBkvydm2Q"); // token your bot
