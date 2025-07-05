@@ -101,8 +101,8 @@ client.on('interactionCreate', async (interaction) => {
       const spinNormal = [
         "Nitro Classic",
         "2.99$ Effect",
-        "Game Over",
-        "Game Over",
+        "Nitro Classic",
+        "2.99$ Effect",
         "Game Over",
         "Game Over",
         "Game Over",
@@ -120,8 +120,8 @@ client.on('interactionCreate', async (interaction) => {
       const spinSpecial = [
         "Nitro Gaming",
         "5$ Effect",
-        "Game Over",
-        "Game Over",
+        "Nitro Gaming",
+        "5$ Effect",
         "Game Over",
         "Game Over",
         "Game Over",
