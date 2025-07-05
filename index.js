@@ -110,7 +110,7 @@ client.on('interactionCreate', async (interaction) => {
       ];
       reward = spinNormal[Math.floor(Math.random() * spinNormal.length)];
       updateUserInvites(interaction.user.id, userInvites - 1);
-      await interaction.reply({ content: `فزت معنا : ${reward}`, ephemeral: true });
+      await interaction.reply({ content: `فزت معنا : Game Over`, ephemeral: true });
     } else {
       return interaction.reply({ content: "لا تملك نقاط كافية لاستخدام العجلة العادية.", ephemeral: true });
     }
@@ -129,7 +129,7 @@ client.on('interactionCreate', async (interaction) => {
       ];
       reward = spinSpecial[Math.floor(Math.random() * spinSpecial.length)];
       updateUserInvites(interaction.user.id, userInvites - 2);
-      await interaction.reply({ content: `فزت معنا : ${reward}`, ephemeral: true });
+      await interaction.reply({ content: `فزت معنا : Game Over`, ephemeral: true });
     } else {
       return interaction.reply({ content: "لا تملك نقاط كافية لاستخدام العجلة الخاصة.", ephemeral: true });
     }
