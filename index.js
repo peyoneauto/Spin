@@ -118,10 +118,10 @@ client.on('interactionCreate', async (interaction) => {
     spinType = 'العجلة الخاصة';
     if (userInvites >= 4) {
       const spinSpecial = [
-        "Nitro Gaming",
-        "5$ Effect",
-        "Nitro Gaming",
-        "5$ Effect",
+        "Game Over",
+        "Game Over",
+        "Game Over",
+        "Game Over",
         "Game Over",
         "Game Over",
         "Game Over",
@@ -181,12 +181,12 @@ client.on("messageCreate", async (message) => {
           .setCustomId('normal_spin')
           .setLabel('Normal Spin')
           .setStyle(ButtonStyle.Primary)
-          .setDisabled(userInvites < 1),
+          .setDisabled(userInvites < 2),
         new ButtonBuilder()
           .setCustomId('special_spin')
           .setLabel('Special Spin')
           .setStyle(ButtonStyle.Secondary)
-          .setDisabled(userInvites < 2)
+          .setDisabled(userInvites < 4)
       );
 
     await message.reply({ components: [row] });
