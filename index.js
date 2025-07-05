@@ -99,10 +99,10 @@ client.on('interactionCreate', async (interaction) => {
     spinType = 'العجلة العادية';
     if (userInvites >= 2) {
       const spinNormal = [
-        "Nitro Classic",
-        "2.99$ Effect",
-        "Nitro Classic",
-        "2.99$ Effect",
+        "Game Over",
+        "Game Over",
+        "Game Over",
+        "Game Over",
         "Game Over",
         "Game Over",
         "Game Over",
