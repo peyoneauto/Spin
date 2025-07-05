@@ -75,7 +75,7 @@ client.on('interactionCreate', async (interaction) => {
     if (interaction.customId === 'normal_spin') {
         spinType = 'العجلة العادية';
         if (userInvites >= 2) {
-            const spinNormal = ["Nitro Classic", "2.99$ Effect", "", "", "", "", "", ""]; // المكافات
+            const spinNormal = ["Nitro Classic", "2.99$ Effect", "Game Over", "Game Over", "Game Over", "Game Over", "Game Over", "Game Over"]; // المكافات
             reward = spinNormal[Math.floor(Math.random() * spinNormal.length)];
             updateUserInvites(interaction.user.id, userInvites - 1);
             await interaction.reply({ content: `فزت معنا : ${reward}`, ephemeral: true });
@@ -85,7 +85,7 @@ client.on('interactionCreate', async (interaction) => {
     } else if (interaction.customId === 'special_spin') {
         spinType = 'العجلة الخاصة';
         if (userInvites >= 4) {
-            const spinSpecial = ["Nitro Gaming", "5$ Effect", "", "", "", "", "", ""]; // حقت البريم
+            const spinSpecial = ["Nitro Gaming", "5$ Effect", "Game Over", "Game Over", "Game Over", "Game Over", "Game Over", "Game Over"]; // حقت البريم
             reward = spinSpecial[Math.floor(Math.random() * spinSpecial.length)];
             updateUserInvites(interaction.user.id, userInvites - 2);
             await interaction.reply({ content: `فزت معنا : ${reward}`, ephemeral: true });
