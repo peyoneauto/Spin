@@ -34,10 +34,10 @@ const client = new Client({
 
 let inviteCounts = new Map();
 let invitedUsers = new Map();
-const logChannelId = "1391054210136539256"; // روم اللوق
+const logChannelId = "1402253204586106993"; // روم اللوق
 
 client.once('ready', () => {
-  console.log('Yuti Spin');
+  console.log('Cairo Spin');
 });
 
 async function fetchAndStoreUserInvites(guild) {
@@ -97,13 +97,13 @@ client.on('interactionCreate', async (interaction) => {
 
   if (interaction.customId === 'normal_spin') {
     spinType = 'العجلة العادية';
-    if (userInvites >= 2) {
+    if (userInvites >= 1) {
       const spinNormal = [
-        "Game Over",
-        "Game Over",
-        "Game Over",
-        "Game Over",
-        "Game Over",
+        "10k",
+        "10k",
+        "15k",
+        "15k",
+        "10k",
         "Game Over",
         "Game Over",
         "Game Over"
@@ -116,13 +116,13 @@ client.on('interactionCreate', async (interaction) => {
     }
   } else if (interaction.customId === 'special_spin') {
     spinType = 'العجلة الخاصة';
-    if (userInvites >= 4) {
+    if (userInvites >= 2) {
       const spinSpecial = [
-        "Game Over",
-        "Game Over",
-        "Game Over",
-        "Game Over",
-        "Game Over",
+        "20k",
+        "20k",
+        "20k",
+        "20k",
+        "20k",
         "Game Over",
         "Game Over",
         "Game Over"
